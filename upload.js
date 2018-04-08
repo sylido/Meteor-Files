@@ -8,10 +8,10 @@ import { EventEmitter } from 'eventemitter3';
 import { check, Match } from 'meteor/check';
 import { fixJSONParse, fixJSONStringify } from './lib.js';
 
-const port     = location.port;
-let _rootUrl = (window.__meteor_runtime_config__.MOBILE_ROOT_URL || window.__meteor_runtime_config__.ROOT_URL).replace(/\/+$/, '');
-_rootUrl += port ? `:${port}` : ""; // concat the port of the server
-const isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+const port     =  location.port;
+let _rootUrl   =  (window.__meteor_runtime_config__.MOBILE_ROOT_URL || window.__meteor_runtime_config__.ROOT_URL).replace(/\/+$/, '');
+_rootUrl       += port ? `:${port}` : ""; // concat the port of the server
+const isSafari =  /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 
 /*
  * @locus Client
