@@ -1,4 +1,4 @@
-import { _ }                              from 'lodash';
+import _                                  from 'lodash';
 import { Mongo }                          from 'meteor/mongo';
 import { WebApp }                         from 'meteor/webapp';
 import { Meteor }                         from 'meteor/meteor';

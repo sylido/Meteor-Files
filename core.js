@@ -1,4 +1,4 @@
-import { _ }                       from 'lodash';
+import _                           from 'lodash';
 import { EventEmitter }            from 'eventemitter3';
 import { formatFleURL }            from './lib.js';
 import { check, Match }            from 'meteor/check';
