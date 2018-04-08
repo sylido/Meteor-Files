@@ -1,5 +1,5 @@
 import fs         from 'fs-extra';
-import { _ }      from 'meteor/underscore';
+import { _ }      from 'lodash';
 import { Meteor } from 'meteor/meteor';
 const NOOP = () => {};
 

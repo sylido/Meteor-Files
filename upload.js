@@ -1,4 +1,4 @@
-import { _ }            from 'stevezhu/lodash';
+import { _ }            from 'lodash';
 import { HTTP }         from 'meteor/http';
 import { Meteor }       from 'meteor/meteor';
 import { Random }       from 'meteor/random';
