@@ -1,4 +1,4 @@
-import { _ }            from 'meteor/underscore';
+import { _ }            from 'stevezhu/lodash';
 import { HTTP }         from 'meteor/http';
 import { Meteor }       from 'meteor/meteor';
 import { Random }       from 'meteor/random';
@@ -59,23 +59,23 @@ export class UploadInstance extends EventEmitter {
     }
 
     check(this.config, {
-      ddp: Match.Any,
-      file: Match.Any,
-      fileId: Match.Optional(String),
-      meta: Match.Optional(Object),
-      type: Match.Optional(String),
-      onError: Match.Optional(Function),
-      onAbort: Match.Optional(Function),
-      streams: Match.OneOf('dynamic', Number),
-      onStart: Match.Optional(Function),
-      fileName: Match.Optional(String),
-      isBase64: Match.Optional(Boolean),
-      transport: Match.OneOf('http', 'ddp'),
-      chunkSize: Match.OneOf('dynamic', Number),
-      onUploaded: Match.Optional(Function),
-      onProgress: Match.Optional(Function),
-      onBeforeUpload: Match.Optional(Function),
-      allowWebWorkers: Boolean
+      ddp             : Match.Any,
+      file            : Match.Any,
+      fileId          : Match.Optional(String),
+      meta            : Match.Optional(Object),
+      type            : Match.Optional(String),
+      onError         : Match.Optional(Function),
+      onAbort         : Match.Optional(Function),
+      streams         : Match.OneOf('dynamic', Number),
+      onStart         : Match.Optional(Function),
+      fileName        : Match.Optional(String),
+      isBase64        : Match.Optional(Boolean),
+      transport       : Match.OneOf('http', 'ddp'),
+      chunkSize       : Match.OneOf('dynamic', Number),
+      onUploaded      : Match.Optional(Function),
+      onProgress      : Match.Optional(Function),
+      onBeforeUpload  : Match.Optional(Function),
+      allowWebWorkers : Boolean
     });
 
     if (this.config.isBase64 === true) {
